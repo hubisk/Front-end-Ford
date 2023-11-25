@@ -121,13 +121,26 @@ ao final, exiba os nomes completos no mconsole com o forEach
 utilizar arrow function
 Se necessário, utilize outros métodos de array. */
 
-const arrayNomes = ['joão', 'paulo', 'cintia', 'rosana', 'sandra']
+/*const arrayNomes = ['joão', 'paulo', 'cintia', 'rosana', 'sandra']
 const arraySobreNomes = ['schultz', 'oliveira', 'almeida', 'raguzzo', 'vineto']
 
-arrayNomesCompletos = arrayNomes + arraySobreNomes.forEach ( (nome) => {
-    return completos
+nomesCompletos = arrayNomes.forEach ( (nome) => {
+    console.log(nome);
 }) + arraySobreNomes.forEach ( (sobreN) => {
-    return completos
+    console.log(sobreN);
 })
-completo = nome + sobreN
-    console.log(completos);
+
+    console.log(nomesCompletos); */
+
+const nome = ['joão', 'paulo', 'cintia', 'rosana', 'sandra']
+const sobreN = ['schultz', 'oliveira', 'almeida', 'raguzzo', 'vineto']
+
+const nomesCompletos = nome.map((nome, indice) => {
+    // Iníco da lógica
+    return `${nome} ${sobreN[indice]}`  // interpolação
+})
+
+// Lógica do forEach
+nomesCompletos.forEach((nomeSobre) => {
+    console.log(nomeSobre);
+})

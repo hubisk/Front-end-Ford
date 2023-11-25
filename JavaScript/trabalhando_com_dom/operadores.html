@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <script>
+        console.log("Olá Mundo!");
+
+        // prompt("Seja bem vindo!");
+        // alert("Seja bem vindo!");
+        // window.confirm("Você tem certeza que quer apagar os dados?");
+        // window não é mais necessário nas versões mais atuais do JavaScript
+
+        // alert("Seja bem vindo!");
+
+        // const nome = prompt("Informe seu Nome abaixo:");
+
+        // confirm("Você tem certeza que " + nome + " é seu nome?"); // contatenação do JavaScript
+        // confirm(`Você tem certeza que ${nome} é seu nome?`); // Interpolação do JavaScript
+
+        // Operadores Aritiméticos + - ? *
+
+        // const primeiroNumeroDigitado = prompt("Digite o primeiro número:") // Vê o número como string
+        // const segundoNumeroDigitado = prompt("Digite o Segundo número:") // Vê o número como string
+
+        // const soma = parseInt(primeiroNumeroDigitado) / parseInt(segundoNumeroDigitado)
+        // console.log(soma);
+
+        /*                  Atividade   
+        Receber 3 notas de um aluno diferentes e exibir a média final do aluno
+        Exiba o nome do aluno  e a nota final do mesmo
+        utilize o prompt e opradores aritiméticos para isso! */
+
+        const nomeAluno = prompt("Digite o nome do primeiro aluno:")
+        const nota1Aluno = prompt("Digite primeira nota do aluno " + nomeAluno + ":")
+        const nota2Aluno = prompt("Digite primeira nota do aluno " + nomeAluno + ":")
+        const nota3Aluno = prompt("Digite primeira nota do aluno " + nomeAluno + ":")
+
+        const mediaAluno = ((parseInt(nota1Aluno) + parseInt(nota2Aluno) + parseInt(nota3Aluno)) / 3)
+
+        alert("O aluno " + nomeAluno + " obteve a média de " + mediaAluno.toFixed(2));
+
+        //  Operadores condicionais (if - if composto - if encadeado)
+
+        const idade = prompt("Qual sua idade?")
+        const documento = prompt("Você está com documento?")
+
+        if (idade >= 18 && documento == "sim") {
+            alert("Pode passar")
+
+        }else{
+            alert("Barrado")
+        }
+
+    </script>
+</body>
+</html>
