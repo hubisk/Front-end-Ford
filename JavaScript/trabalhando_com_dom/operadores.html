@@ -45,15 +45,20 @@
 
         //  Operadores condicionais (if - if composto - if encadeado)
 
-        const idade = prompt("Qual sua idade?")
-        const documento = prompt("Você está com documento?")
+        const nome = prompt("Qual seu nome?")
+        const idade = prompt(`${nome}, qual sua idade?`)
+        const documento = prompt(`${nome}, você está com sdeu documento?`)
 
-        if (idade >= 18 && documento == "sim") {
-            alert("Pode passar")
+        // if (idade >= 18 && documento == "sim") {
+        //     alert("Pode passar")
 
-        }else{
-            alert("Barrado")
-        }
+        // }else{
+        //     alert("Barrado")
+        // }
+
+        // bloco lógico 
+        idade >= 18 && documento == "sim" ? alert("Pode passar") : alert("Barrado")
+
 
     </script>
 </body>

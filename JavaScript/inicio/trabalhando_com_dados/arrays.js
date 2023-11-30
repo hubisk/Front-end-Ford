@@ -16,6 +16,10 @@ console.log(`
 
 `);
 
+const arrSimples = [28, 84, 3, 58, 576, 72]
+console.log(arrSimples[3]);
+console.log(arrSimples.length);
+
 //toFixed limita as casas decimais e arredonda o valor
 
 

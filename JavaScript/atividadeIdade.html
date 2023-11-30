@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Cálculo de Idade</title>
+</head>
+<body>
+    <script>
+
+        // Crie um programa para calcular a idade de uma pessoa em:
+        // meses - dias- horas - minutos
+
+        // Entrada de Dados
+        // const idadeAnos = prompt("Qual sua idade?")
+
+        // Processamento de Dados  -  Calculo Lógico
+        // const meses = idadeAnos * 12
+        // const dias = idadeAnos * 365
+        // const horas = (365 * 24) * idadeAnos
+        // const minutos = (24 * 60) * dias
+
+        // Saída de Dados  -  Exibição (alert, log...)
+        // alert(`Você tem ${meses} meses de idade.\n Ou, ${dias} dias de idade.\n Ou, ${horas} horas de idade.\n Ou, ${minutos} minutos de idade.`)
+
+        // Resolução Professor
+        
+        let meses = 12
+        let dias = 365
+        let horas = 24
+        let minutos = 60
+
+        // Entrada de Dados
+        const nome = prompt("Informe seu nome:")
+        const idadeAnos = prompt("Qual sua idade?")
+    
+        
+        // Processamento de Dados  -  Cálculo Lógico
+        const calcMeses = idadeAnos * meses
+        const calcDias = idadeAnos * dias
+        const calcHoras = calcDias * horas
+        const calcMinutos = calcHoras * minutos
+        
+        
+        // Saída de Dados  -  Exibição (alert, log...)
+        // if (idadeAnos > 0 && idadeAnos < 100) {  // Condição adicionada
+        //     alert(`
+        //         ${nome}, você tem ${idadeAnos} anos de idade? 
+        //         Ou, ${calcMeses} meses de idade.
+        //         Ou, ${calcDias} dias de idade.
+        //         Ou, ${calcHoras} horas de idade.
+        //         Ou, ${calcMinutos} minutos de idade.
+        //     `)
+        // }else{
+        //     alert("A idade informada não atende aos requisitos!!")
+        // }
+        
+        // If Ternário
+        idadeAnos > 0 && idadeAnos < 100 ?
+            alert(`
+                    ${nome}, você tem ${idadeAnos} anos de idade? 
+                    Ou, ${calcMeses} meses de idade.
+                    Ou, ${calcDias} dias de idade.
+                    Ou, ${calcHoras} horas de idade.
+                    Ou, ${calcMinutos} minutos de idade.
+                `) : alert("A idade informada não atende aos requisitos!!")
+
+    </script>
+</body>
+</html>
