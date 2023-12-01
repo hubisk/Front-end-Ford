@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const bebida = Number(prompt(`
+        Benvindo ao nosso bar, gostaria de uma bebida?
+        Escolha uma das opções:1
+        1- Guaraná
+        2- Fanta
+        3- Suco
+        4- Água
+        `))
+
+        let escolha = prompt("Você gostaria de adicinar gelo à sua bebida?");
+
+        switch (escolha) {
+            case 1:
+                if (escolha == "sim") {
+                    alert("Sua bebida será sevida gelada.")
+                }else{
+                    alert("Sua bebida será servida sem gelo")
+                }
+                break;
+        
+            default:
+                break;
+        }
+
+
+    </script>
+</body>
+</html>

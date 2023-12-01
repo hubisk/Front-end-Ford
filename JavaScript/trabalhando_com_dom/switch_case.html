@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        // Montar variável para armazenar os valores para o switch case
+        // Nome Variável    | Aqui formata a entrada de dados p/ aceitar somente Números
+        const escolhaUser = Number (prompt('Informe um número de 1 a 3:'))
+
+        // Aqui entra no bloco de escolha com o switch
+
+        //           |   Aqui chame a variável
+        switch (escolhaUser) {
+
+            //   | Aqui inserir o número da opção como valor do Case 
+            case 1:
+
+            //  | Aqui  |  Aqui pode ser declarado variáveis, calculos e mensagens de retorno
+                alert('O número foi 1.')
+                break;
+            case 2:
+                alert('O número foi 2.')
+                break;
+            case 3:
+                alert('O número foi 3.')
+                break;        
+
+                //  Aqui se nenhuma opção for certa entra nesta parte do bloco de código
+            default:
+                alert('Opção inválida, escolha um número entre 1 e 3.')
+                break;
+        }
+    </script>
+</body>
+</html>

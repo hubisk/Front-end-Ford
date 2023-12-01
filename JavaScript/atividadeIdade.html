@@ -56,14 +56,51 @@
         // }
         
         // If Ternário
-        idadeAnos > 0 && idadeAnos < 100 ?
-            alert(`
-                    ${nome}, você tem ${idadeAnos} anos de idade? 
-                    Ou, ${calcMeses} meses de idade.
-                    Ou, ${calcDias} dias de idade.
-                    Ou, ${calcHoras} horas de idade.
-                    Ou, ${calcMinutos} minutos de idade.
-                `) : alert("A idade informada não atende aos requisitos!!")
+        // idadeAnos > 0 && idadeAnos < 100 ?  
+        // Aqui aplicamos o "literal tamplate" p/ qubrar linha
+            // alert(`
+            //         ${nome}, você tem ${idadeAnos} anos de idade? 
+            //         Ou, ${calcMeses} meses de idade.
+            //         Ou, ${calcDias} dias de idade.
+            //         Ou, ${calcHoras} horas de idade.
+            //         Ou, ${calcMinutos} minutos de idade.
+            //     `) : alert("A idade informada não atende aos requisitos!!")
+
+
+            //      Utilizando escolhas com Switch Case
+            
+        if (idadeAnos > 0 && idadeAnos < 100) {  // Condição adicionada
+
+            const escolhaUser = Number(prompt(`
+            O que você deseja exibir?
+            1- Calculo em meses:
+            2- Calculo em dias:
+            3- Calculo em horas:
+            4- Calculo em minutos:
+            `))
+
+            switch (escolhaUser) {
+                case 1:
+                    alert(`${nome}, você tem ${calcMeses} meses de idade`)
+                    break;
+                case 2:
+                    alert(`${nome}, você tem ${calcDias} dias de idade`)
+                    break;
+                case 3:
+                    alert(`${nome}, você tem ${calcHoras} horas de idade`)
+                    break;
+                case 4:
+                    alert(`${nome}, você tem ${calcMinutos} minutos de idade`)
+                    break;
+            
+                default:
+                    alert("Dados Incorretos")
+                    break;
+            }
+                   
+                }else{
+                    alert("A idade informada não atende aos requisitos!!")
+                }
 
     </script>
 </body>

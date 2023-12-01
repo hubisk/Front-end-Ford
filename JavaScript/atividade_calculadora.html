@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Entrada de Dados
+const num1 = Number(prompt("Informe o primeiro número:"))
+const num2 = Number(prompt("Informe o segundo número:"))
+
+// Processamento dos Daods
+const resultadoCalculo = Number(prompt(`
+    Qual tipo de operação você quer efetuar?
+    1- Soma:
+    2- Subtração
+    3- Multiplicação:
+    4- Divisão:
+`))
+
+// Saída dos Dados
+switch (resultadoCalculo) {
+    case 1:
+        soma = num1 + num2
+        alert(`O resultado da soma dos dois números foi ${soma}`)
+        break;
+    case 2:
+        subtracao = num1 - num2
+        alert(`O resultado da subtração dos dois números foi ${subtracao}`)
+        break;
+    case 3:
+        multiplica = num1 * num2
+        alert(`O resultado da multiplicação dos dois números foi ${multiplica}`)
+        break;
+    case 4:
+        divide = num1 / num2
+        alert(`O resultado da divisão dos dois números foi ${divide}`)
+        break;
+
+    default:
+        alert("Opção inválida, escolha um número entre 1 e 4.")
+        break;
+}
+
+    </script>
+</body>
+</html>
