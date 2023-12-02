@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop For e While</title>
+</head>
+<body>
+    <!-- Início Loop -->
+
+    <script>
+//            | Declaração da variável
+        let passo;
+
+//Inicia c/ um valor | Condição |       | Incremento
+        for (passo = 0; passo < 5; passo++) {
+// Inicializador |        True |        | Incremento de +1
+
+//                          | Retorno Declaração
+            console.log("Ande um passo para o leste");
+        }
+
+//  Qual a idade do Péricles?
+
+//      Iníco da variável
+        let idadePericles = Number(prompt("Qual a idade do Péricles?"))
+
+//      Enquanto idade for DIFERENTE de 54
+        while (idadePericles !== 54) {
+            //                | Operador Relacional = Diferente !== 
+
+//          Condição se for verdadeira
+            alert("Errouuuuu, tente novamente.")
+
+        // Operador ternário para dizer ao usuário se ele está mais perto de acertar a resposta
+            idadePericles < 54 ? alert("O Péricles é mais velho.") : alert("O Péricles é mais novo.")
+
+        // Retorno com a pergunta inicial novamente
+            idadePericles = Number(prompt("Qual a idade do Péricles?"));
+        }
+
+        // Mensagem que acertou a resposta e fecha o programa
+        alert("Resposta Correta")
+
+// ----------------------------------------------------------------
+//      Senha digitada != 6
+let senha = prompt ("Informe uma senha: ")
+
+while (senha.length !== 6) {
+    //  Bloco de for verdade
+    alert("Opa, a senha tem que ter 6 caracteres. Informe a senha novamente.")
+//  Esta declaração de condição não é necessária
+    // senha.length == 6 ? alert("Senha correta) : alert("Senha incorreta")
+
+    senha = prompt("Informe a senha novamente:")
+}
+
+//  Saída
+    alert("login efetuado")
+
+</script>
+</body>
+</html>

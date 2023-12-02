@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de Bebidas</title>
 </head>
 <body>
     <script>
@@ -16,47 +16,84 @@
         4- Água
         `))
 
+        // switch (bebida) {
+        //     case 1:
+        //         let escolha1 = prompt("Você gostaria de adicinar gelo à sua bebida?");
+                
+        //         if (escolha1 == "sim") {
+        //             alert("Sua bebida será servida gelada.")
+        //         }else{
+        //             alert("Sua bebida será servida sem gelo")
+        //         }
+        //         break;
+        //     case 2:
+        //         let escolha2 = prompt("Você gostaria de adicinar gelo à sua bebida?");
+                
+        //         if (escolha2 == "sim") {
+        //             alert("Sua bebida será servida gelada.")
+        //         }else{
+        //             alert("Sua bebida será servida sem gelo")
+        //         }
+        //         break;
+        //     case 3:
+        //         let escolha3 = prompt("Você gostaria de adicinar gelo à sua bebida?");
+                
+        //         if (escolha3 == "sim") {
+        //             alert("Sua bebida será servida gelada.")
+        //         }else{
+        //             alert("Sua bebida será servida sem gelo")
+        //         }
+        //         break;
+        //     case 4:
+        //         let escolha4 = prompt("Você gostaria de adicinar gelo à sua bebida?");
+                
+        //         if (escolha4 == "sim") {
+        //             alert("Sua bebida será servida gelada.")
+        //         }else{
+        //             alert("Sua bebida será servida sem gelo")
+        //         }
+        //         break;
+        
+        //     default:
+        //         break;
+        // }
+
+        //  Solução Professor
+
+        let gelo;
         switch (bebida) {
             case 1:
-                let escolha1 = prompt("Você gostaria de adicinar gelo à sua bebida?");
-                
-                if (escolha1 == "sim") {
-                    alert("Sua bebida será sevida gelada.")
-                }else{
-                    alert("Sua bebida será servida sem gelo")
-                }
-                break;
+            alert("Você escolheu Guaraná.")
+            gelo = prompt("Você gostaria de acrescentar gelo?").toLowerCase()
+
+            gelo == "sim" ? alert("Sua bebida será servida gelada.") : alert("Sua bebida será servida sem gelo.")
+            break;
+
             case 2:
-                let escolha2 = prompt("Você gostaria de adicinar gelo à sua bebida?");
-                
-                if (escolha2 == "sim") {
-                    alert("Sua bebida será sevida gelada.")
-                }else{
-                    alert("Sua bebida será servida sem gelo")
-                }
-                break;
+            alert("Você escolheu Fanta.")
+            gelo = prompt("Você gostaria de acrescentar gelo?").toLowerCase()
+
+            gelo == "sim" ? alert("Sua bebida será servida gelada.") : alert("Sua bebida será servida sem gelo.")
+            break;
+
             case 3:
-                let escolha3 = prompt("Você gostaria de adicinar gelo à sua bebida?");
-                
-                if (escolha3 == "sim") {
-                    alert("Sua bebida será sevida gelada.")
-                }else{
-                    alert("Sua bebida será servida sem gelo")
-                }
-                break;
+            alert("Você escolheu Suco.")
+            gelo = prompt("Você gostaria de acrescentar gelo?");toLowerCase()
+
+            gelo == "sim" ? alert("Sua bebida será servida gelada.") : alert("Sua bebida será servida sem gelo.")
+            break;
+
             case 4:
-                let escolha4 = prompt("Você gostaria de adicinar gelo à sua bebida?");
-                
-                if (escolha4 == "sim") {
-                    alert("Sua bebida será sevida gelada.")
-                }else{
-                    alert("Sua bebida será servida sem gelo")
-                }
-                break;
+            alert("Você escolheu Água.")
+            gelo = prompt("Você gostaria de acrescentar gelo?").toLowerCase()
+
+            gelo == "sim" ? alert("Sua bebida será servida gelada.") : alert("Sua bebida será servida sem gelo.")
+            break;
         
             default:
                 break;
         }
+
 
 
     </script>
